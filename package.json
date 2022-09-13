@@ -1,11 +1,12 @@
 {
-  "name": "firstTask",
+  "name": "secondtask",
   "version": "1.0.0",
   "description": "project untuk melengkapi tugas",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "build": "node src/index.js"
+    "build": "node src/index.js",
+    "migrate": "knex migrate:latest --knexfile src/models/knexfile.js"
   },
   "author": "Prins Naval Nuzeren",
   "license": "MIT",
@@ -13,8 +14,12 @@
     "nodemon": "latest"
   },
   "dependencies": {
-    "express": "latest",
+    "bcrypt": "^5.0.1",
     "cors": "latest",
-    "dotenv": "latest"
+    "dotenv": "latest",
+    "express": "latest",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.6.5"
   }
 }
